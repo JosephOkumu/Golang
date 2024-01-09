@@ -9,7 +9,7 @@ func dispDigit(n int) {
 		return
 	} else if n < 0 {
 		z01.PrintRune('-')
-		//n = -n
+		n = -n
 	}
 	printNba(n)
 }
