@@ -3,13 +3,13 @@ package main
 
 import (
 	"fmt"
-	"strconv"
 )
 
 func BasicAtoi(s string) int {
 	n := 0
-	if v, err := strconv.Atoi(s); err == nil {
-		n = n + v
+	for _, v := range s {
+		//where 48 is the ascii value of char 0
+		n = n*10 + int(v-48)
 	}
 	return n
 }
