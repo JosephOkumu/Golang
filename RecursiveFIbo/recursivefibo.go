@@ -11,6 +11,7 @@ func recurseFibo(index int) int {
 	} else if index == 1 {
 		return 1
 	} else {
+		//The line below finds the fibo index-1 and fibo of index-2 and sums them.
 		return recurseFibo(index-1) + recurseFibo(index-2)
 	}
 }
