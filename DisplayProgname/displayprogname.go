@@ -1,13 +1,17 @@
 package main
 
 import (
-	"fmt"
 	"os"
+
+	"github.com/01-edu/z01"
 )
 
 func displayProgname() {
 	args := os.Args[0]
-	fmt.Println(args)
+	for i := 0; i < len(args); i++ {
+		ltr := rune(args[i])
+		z01.PrintRune(ltr)
+	}
 }
 
 func main() {
