@@ -8,16 +8,11 @@ import (
 
 func arrangeParamet() {
 	args := os.Args[1:]
-	//str := ""
 
-	for i := 0; i < len(args); i++ {
-		//wrd := args[i]
-		for j := 0; j < len(args)-1; j++ {
-			for k := j + 1; k < len(args); k++ {
-				if args[j] > args[k] {
-					args[j], args[k] = args[k], args[j]
-				}
-
+	for i := 0; i < len(args)-1; i++ {
+		for j := i + 1; j < len(args); j++ {
+			if args[i] > args[j] {
+				args[i], args[j] = args[j], args[i]
 			}
 		}
 	}
@@ -26,7 +21,9 @@ func arrangeParamet() {
 			z01.PrintRune(char)
 		}
 		z01.PrintRune('\n')
+
 	}
+
 }
 
 func main() {
