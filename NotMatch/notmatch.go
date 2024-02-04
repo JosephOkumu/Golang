@@ -8,6 +8,7 @@ func notMatch(a []int) int {
 
 	for _, v := range a {
 		count[v]++ //Increment the count of the current element in the map.
+		//fmt.Println(count) shows elements in the map and their count
 	}
 	for _, v := range a {
 		if count[v]%2 != 0 {
