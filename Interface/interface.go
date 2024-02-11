@@ -21,12 +21,12 @@ type rect struct {
 	height float64
 }
 
-// Define a method for the rect struct to calculate its area
+// Define a method for the rect struct to calculate its area. The (r rect) is called the receiver.
 func (r rect) area() float64 {
 	return r.width * r.height
 }
 
-// Define a method for the circle struct to calculate its area
+// Define a method for the circle struct to calculate its area. The (c circle) is called the receiver
 func (c circle) area() float64 {
 	return math.Pi * c.radius * c.radius
 }
