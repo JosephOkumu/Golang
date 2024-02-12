@@ -12,6 +12,7 @@ type List struct {
 	tail *Node
 }
 
+// The code block addNodEnd adds a node at the end of the linked list
 func addNodEnd(l *List, data interface{}) {
 	newNode := &Node{data: data, next: nil}
 
@@ -24,11 +25,13 @@ func addNodEnd(l *List, data interface{}) {
 	}
 }
 
+// This function here is what clears the linked list
 func clearLinked(l *List) {
 	l.head = nil
 	l.tail = nil
 }
 
+// This block prints the linked list
 func printList(l *List) {
 	iterator := l.head
 	for iterator != nil {
