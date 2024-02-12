@@ -44,7 +44,7 @@ func printList(l *List) {
 func main() {
 	link := &List{}
 
-	addNodEnd(link, "I")
+	addNodEnd(link, "Muslim")
 	addNodEnd(link, 7)
 	addNodEnd(link, "Christian")
 	addNodEnd(link, 35)

@@ -4,8 +4,8 @@ import "fmt"
 
 // Node represents a node in the linked list
 type Node struct {
-	data interface{} // data of any type
-	next *Node       // pointer to the next node
+	data interface{}
+	next *Node // pointer to the next node
 }
 
 // List represents the linked list
