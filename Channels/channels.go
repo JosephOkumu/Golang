@@ -16,6 +16,7 @@ func main() {
 
 	ch := make(chan int) // Create an integer channel
 
+	// Work is distributed between two goroutines.
 	go sum(s[:len(s)/2], ch) // Start a goroutine to sum the first half of the slice
 	go sum(s[len(s)/2:], ch) // Start a goroutine to sum the second half of the slice
 
